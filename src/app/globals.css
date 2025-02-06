@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo-ticker {
+    display: flex;
+    animation: tickerLeft 15s linear infinite; 
+  }
+  
+  .logo-ticker img {
+    flex-shrink: 0; 
+  }
+  
+  @keyframes tickerLeft {
+    from {
+      transform: translateX(0); 
+    }
+    to {
+      transform: translateX(-50%); 
+    }
+  }
+
+.testi-anim {
+  animation: testiAnim 35s linear infinite;
+}
+
+
+@keyframes testiAnim {
+  0% {
+    transform: translateX(15%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(15%);
+  }
+}
